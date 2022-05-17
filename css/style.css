@@ -1,0 +1,113 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Header */
+header{
+    width: 100%;
+    height: 90px;
+    background-color: #000000;
+    margin-bottom: 20px;
+}
+
+#logo{
+    width: 10%;
+    height: inherit;
+
+}
+
+/* Nav */
+#menu{
+    width: 90%;
+    height: inherit;
+}
+
+
+#logo, #menu{
+    float: left;
+}
+
+/* Menu Itens (List ul) */
+ul{
+    list-style: none;
+}
+
+ul li:first-of-type{
+    padding-top: 30px;
+    width: auto;
+    height: inherit;
+    float: left;
+    margin-right: 50px;
+}
+
+ul li:last-of-type{
+    width: auto;
+    height: inherit;
+    float: left;
+    margin-right: 50px;
+    padding-top: 35px;
+    color: #05BEF9;
+    font-size: 1em;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+/* Main */
+main{
+    width: 100%;
+    height: 770px;
+}
+
+/* Form Container */
+#form, #result{
+    width: 50%;
+    height: 400px;
+    float: left;
+    padding: 20px;
+}
+
+#form h1, #result h1{
+    margin-bottom: 20px;
+}
+
+/* Form elements (inputs) */
+label{
+    display: block;
+    font-weight: bold;
+    font-size: 0.8em;
+    margin-bottom: 2px;
+
+}
+
+input{
+    height: 30px;
+    margin-bottom: 10px;
+    
+}
+
+input[type=text]:last-of-type{
+    margin-bottom: 15px;
+}
+
+input[type=button]{
+    width: 200px;
+    height: 48px;
+    background-color: #0077BA;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #FFFFFF;
+    display: block;
+}
+
+input[type=button]:hover, #newCalc:hover{
+    background-color: #000000;
+    color: #FFFFFF;
+    transition: 1s;
+    cursor: pointer;
+}
