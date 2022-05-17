@@ -1,7 +1,7 @@
 //Function
 const calculatorElectricity = function (){
         
-    //Consts declarate
+    //Consts declaration
     const flatRate = 0.20;
     const standCharges = 0.04;
     const tax = 13.5;
