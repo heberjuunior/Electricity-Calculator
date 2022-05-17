@@ -36,3 +36,36 @@ const calculatorElectricity = function (){
     }    
 
 }
+
+//Function: Block characters
+const blockChar = function (objEvent) 
+{
+    var tecla;
+    if(window.event) { // Internet Explorer
+        tecla = event.keyCode;
+    }
+    else { // Firefox
+        tecla = caracter.which;
+    }
+
+    if(tecla < 48 || tecla > 57) { 
+        if (tecla != 46)
+            return false;
+    }
+    else { 
+        return true;
+    }
+}
+
+//Function: Reset Values 
+const newCalc = function (){
+    let units = document.querySelector('#units');
+    let days = document.querySelector('#days');
+    let vat = document.querySelector('#vat');
+    let vatTotal = document.querySelector('#vatTotal');
+
+    units.value = "";
+    days.value = "";
+    vat.innerHTML = "0.00";
+    vatTotal.innerHTML = "0.00";
+}
